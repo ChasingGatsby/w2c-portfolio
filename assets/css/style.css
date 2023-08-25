@@ -6,7 +6,7 @@ body {
     display: flex;
     justify-content: space-between;
     color:rgb(177, 160, 160);
-    background-color: rgb(92, 12, 12);
+    background-color: black;
     height: 100px;
 }
 
@@ -17,8 +17,13 @@ body {
 
 }
 
+.navbar {
+    width: 40%;
+}
+
 .navbar ul {
     display: flex;
+    justify-content: space-evenly
 }
 
 .header h1 {
@@ -30,4 +35,14 @@ body {
 
 .navbar ul li {
     margin: 60px 10px 10px 10px;
+}
+
+main {
+    margin-left: 50px;
+}
+
+h2 {
+    font-size: 40px;
+    margin: 20px;
+    border:
 }
