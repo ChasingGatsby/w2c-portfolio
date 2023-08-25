@@ -41,8 +41,11 @@ main {
     margin-left: 50px;
 }
 
-h2 {
+.card h2 {
     font-size: 40px;
     margin: 20px;
-    border:
+}
+
+.contact {
+    display:flex;
 }
