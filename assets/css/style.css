@@ -55,8 +55,12 @@ A:active {
   font-size: 40px;
   margin: 20px;
   padding: 20px;
-  background-color: aqua;
-  width: 350px;
+  width: max-content;
+  border-style: solid inset inset solid;
+  border-width: 5px;
+  border-color: teal;
+  box-shadow: 10px 5px 5px gray;
+
 }
 
 .title p {
@@ -71,7 +75,7 @@ A:active {
 
 
 
-.contact li {
+.contactinfo li {
   background-color: aqua;
   margin: 25px 45px;
   font-size: 200%;
@@ -80,7 +84,10 @@ A:active {
   list-style: circle;
 }
 
-
 #greeting {
     font-size: 200%;
+    position: relative;
+    right: 25px;
+    font-weight: bold;
+    font-style: oblique;
 }
