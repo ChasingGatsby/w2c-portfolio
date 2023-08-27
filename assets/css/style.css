@@ -1,12 +1,13 @@
 body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: aliceblue;
 }
 
 .header {
   display: flex;
   justify-content: space-between;
   color: white;
-  background-color: maroon;
+  background-color: rgb(92, 8, 8);
   height: 100px;
 }
 
@@ -55,12 +56,12 @@ A:active {
   font-size: 40px;
   margin: 20px;
   padding: 20px;
+  background-color: white;
   width: max-content;
   border-style: solid inset inset solid;
   border-width: 5px;
   border-color: teal;
   box-shadow: 10px 5px 5px gray;
-
 }
 
 .title p {
@@ -69,14 +70,12 @@ A:active {
 }
 
 .card p {
-    margin-left: 60px;
-    font-size:150%;
+  margin-left: 60px;
+  font-size: 150%;
 }
 
-
-
 .contactinfo li {
-  background-color: aqua;
+  /* background-color: aqua; */
   margin: 25px 45px;
   font-size: 200%;
   font-weight: bold;
@@ -85,9 +84,9 @@ A:active {
 }
 
 #greeting {
-    font-size: 200%;
-    position: relative;
-    right: 25px;
-    font-weight: bold;
-    font-style: oblique;
+  font-size: 200%;
+  position: relative;
+  right: 25px;
+  font-weight: bold;
+  font-style: oblique;
 }
