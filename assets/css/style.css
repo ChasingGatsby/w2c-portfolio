@@ -3,7 +3,7 @@ body {
   background-color: rgb(142, 183, 219);
 }
 
-img {
+#gears {
   width: 100%;
   height: 250px;
   object-fit: cover;
@@ -61,6 +61,10 @@ A:active {
   margin: 50px 10px 10px 10px;
 }
 
+.card {
+  margin-bottom: 50px;
+}
+
 .listpt {
   font-size: 40px;
   margin: 20px;
@@ -79,6 +83,31 @@ A:active {
   display: flex;
 }
 
+.library {
+  margin-left: 50px;
+  margin-top: 30px;
+  height: 510px;
+  display: flex;
+
+}
+
+.library img {
+  border: solid;
+  flex-grow: 0;
+  margin: 5px;
+}
+
+#first {
+  align-self: left;
+  height:500px;
+}
+
+.next {
+  display:flex;
+  flex-flow: column wrap;
+  justify-content: space-between;
+}
+
 .contactinfo li {
   /* background-color: aqua; */
   margin: 25px 45px;
@@ -86,6 +115,14 @@ A:active {
   font-weight: bold;
   width: 30%;
   list-style: circle;
+}
+
+.footer {
+  text-align:center;
+  padding:50px;
+  background-color: rgb(92, 8, 8);
+  color:white;
+  font-size: 30px;
 }
 
 #greeting {
