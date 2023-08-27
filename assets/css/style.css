@@ -86,21 +86,20 @@ A:active {
 .library {
   margin-left: 50px;
   margin-top: 30px;
-  width:1200px;
+  width:100%;
   display: flex;
+  flex: 0 0 auto;
 }
 
 .library img {
   border: solid;
-  flex-grow: 0 0 auto;
+  flex: 0 0 auto;
+  margin: 5px;
 }
 
-#first {
-  align-self: flex-start;
-}
-
-.nonfirst {
-  height: 225px;
+.next {
+  display:flex;
+  flex-wrap: wrap;
 }
 
 .contactinfo li {
