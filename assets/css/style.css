@@ -1,92 +1,86 @@
 body {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .header {
-    display: flex;
-    justify-content: space-between;
-    color: white;
-    background-color: maroon;
-    height: 100px;
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  background-color: maroon;
+  height: 100px;
 }
 
 .header h1::after {
-    font-size: 50%;
-    content: "@Gatsbeau";
-    display: flex;
-
+  font-size: 50%;
+  content: "@Gatsbeau";
+  display: flex;
 }
 
 a:link {
-    color: white;
+  color: white;
 }
 
-a:visited{
-    color: rgb(192, 183, 183);
+a:visited {
+  color: rgb(192, 183, 183);
 }
 
 a:hover {
-    font-weight: bolder;
+  font-weight: bolder;
 }
 
 A:active {
-    font-style: oblique;
+  font-style: oblique;
 }
 
 .navbar {
-    width: 40%;
+  width: 40%;
 }
 
 .navbar ul {
-    display: flex;
-    justify-content: space-evenly;
-    background-color: 
+  display: flex;
+  justify-content: space-evenly;
 }
 
 .header h1 {
-    font-size: 200%;
-    padding: 10px;
-    margin: 10px;
+  font-size: 200%;
+  padding: 10px;
+  margin: 10px;
 }
-
 
 .navbar ul li {
-    margin: 60px 10px 10px 10px;
+  margin: 60px 10px 10px 10px;
 }
 
-.title{
-    display: flex;
-    flex-direction: row;
-}
-
-.title.contact {
-    display:flex;
-    flex-direction: column;
-    align-items: flex-end;
-}
-
-.listpt{
-    font-size: 40px;
-    margin: 20px;
-    padding: 20px;
-    background-color: aqua;
-    width: 350px;
-    text-align: right;
+.listpt {
+  font-size: 40px;
+  margin: 20px;
+  padding: 20px;
+  background-color: aqua;
+  width: 350px;
 }
 
 .title p {
-    background-color: aqua;
-    padding: 20px;
+  background-color: aqua;
+  padding: 20px;
 }
 
-#contact {
-    background-color: aqua;
-    display:flex;
-    flex-direction: column;
-    margin-right: 50px;
-    list-style: circle;
+.card p {
+    margin-left: 60px;
+    font-size:150%;
 }
 
-.card {
-    display: flex;
+
+
+.contact li {
+  background-color: aqua;
+  margin: 25px 45px;
+  font-size: 200%;
+  font-weight: bold;
+  width: 30%;
+  list-style: circle;
+}
+
+
+#greeting {
+    font-size: 200%;
 }
