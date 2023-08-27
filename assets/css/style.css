@@ -58,7 +58,7 @@ A:active {
 }
 
 .navbar ul li {
-  margin: 60px 10px 10px 10px;
+  margin: 50px 10px 10px 10px;
 }
 
 .listpt {
@@ -73,14 +73,10 @@ A:active {
   box-shadow: 10px 5px 5px gray;
 }
 
-.title p {
-  background-color: aqua;
-  padding: 20px;
-}
-
 .card p {
   margin-left: 60px;
   font-size: 150%;
+  display: flex;
 }
 
 .contactinfo li {
