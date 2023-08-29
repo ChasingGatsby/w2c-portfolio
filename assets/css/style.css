@@ -63,6 +63,9 @@ A:active {
 
 .navbar ul li {
   margin: 50px 10px 10px 10px;
+  border-style: solid;
+  border-color: #b5c99a;
+  padding: 5px;
 }
 
 .card {
@@ -122,6 +125,10 @@ A:active {
 .next {
   display: flex;
   position: relative;
+}
+
+.next a {
+  flex: 1 1 100%;
 }
 
 .soon {
@@ -202,9 +209,27 @@ A:active {
 
   .img1 {
     display: inline-block;
-    width: 80%;
+    width: 93%;
   }
 
+  .nonfirst {
+    display:flex;
+    width:auto;
+  }
+
+  .next a {
+    display: block;
+    width:auto;
+  }
+
+  .next img {
+    width:50%;
+  }
+
+  .next p {
+    font-size: 80%
+
+  }
 
   .contact {
     font-size: 60%;
@@ -212,5 +237,16 @@ A:active {
 
   .footer {
     padding: 25px;
+  }
+}
+
+@media screen and (max-width:810px) {
+
+  body {
+    width: 100%;
+  }
+  
+  .header {
+    width: 100%
   }
 }
