@@ -5,6 +5,7 @@ body {
 }
 :root {
   --maincolor: rgb(92, 8, 8);
+  --cardcolor: #fff9c9;
 }
 
 #gears {
@@ -32,7 +33,7 @@ a:link {
 }
 
 a:visited {
-  color: rgb(192, 183, 183);
+  color: purple;
 }
 
 a:hover {
@@ -65,6 +66,7 @@ A:active {
   margin: 50px 10px 10px 10px;
   border-style: solid;
   border-color: #b5c99a;
+  background-color: var(--cardcolor);
   padding: 5px;
 }
 
@@ -188,9 +190,6 @@ A:active {
     margin-top: 0px;
     text-align: right;
     font-size: 80%;
-    border-style: solid;
-    border-color: #b5c99a;
-    padding: 5px;
   }
 
   #gears {
@@ -201,10 +200,21 @@ A:active {
     font-size: 100%;
   }
 
+  #greeting {
+    margin-left:40px;
+    font-size: 20px;
+  } 
+
+  .aboutme p {
+    font-size: 20px;
+    margin: 0px 10px;
+  }
+
   .library {
     display: flex;
     flex-wrap: wrap;
     margin-left: 10px;
+    width: 100%;
   }
 
   .img1 {
