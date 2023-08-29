@@ -1,6 +1,7 @@
 body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  background-color: rgb(142, 183, 219);
+  background-color: #b5c99a;
+  min-height: 100vh;
 }
 :root {
   --maincolor: rgb(92, 8, 8);
@@ -17,7 +18,7 @@ body {
   justify-content: space-between;
   color: white;
   background-color: rgb(92, 8, 8);
-  height: 110px;
+  /* height: 110px; */
 }
 
 .header h1::after {
@@ -62,6 +63,9 @@ A:active {
 
 .navbar ul li {
   margin: 50px 10px 10px 10px;
+  border-style: solid;
+  border-color: #b5c99a;
+  padding: 5px;
 }
 
 .card {
@@ -72,7 +76,7 @@ A:active {
   font-size: 40px;
   margin: 20px;
   padding: 20px;
-  background-color: whitesmoke;
+  background-color: #fff9c9;
   width: max-content;
   border-style: solid inset inset solid;
   border-width: 5px;
@@ -90,28 +94,53 @@ A:active {
   margin-left: 50px;
   margin-top: 30px;
   display: flex;
-  /* flex-flow: row wrap; */
+}
+
+.first {
+  position: relative;
+}
+
+.proj1 {
+  position: absolute;
+  top: 8px;
+  left:-52px;
+  background-color: var(--maincolor);
+  color:white;
+  padding:10px
 }
 
 .library img {
   border: solid;
   border-color: rgb(92, 8, 8);
-  flex-grow: 0;
   margin: 5px;
-
 }
 
-#first {
-  align-self: left;
+.nonfirst {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: flex-start;
+  align-content: space-between;
 }
 
 .next {
-  display:flex;
-  flex-flow: row wrap;
+  display: flex;
+  position: relative;
+}
+
+.next a {
+  flex: 1 1 100%;
+}
+
+.soon {
+  position: absolute;
+  top: 8px;
+  left: -52px;
+  color:white;
+  background-color: var(--maincolor);
+  padding:10px
 }
 
 .contactinfo li {
-  /* background-color: aqua; */
   margin: 25px 45px;
   font-size: 200%;
   font-weight: bold;
@@ -119,11 +148,15 @@ A:active {
   list-style: circle;
 }
 
+#ghlink:visited {
+  color: purple;
+}
+
 .footer {
-  text-align:center;
-  padding:50px;
+  text-align: center;
+  padding: 50px;
   background-color: rgb(92, 8, 8);
-  color:white;
+  color: white;
   font-size: 30px;
   font-style: oblique;
   text-decoration: underline;
@@ -142,33 +175,78 @@ A:active {
     width: 100%;
   }
 
-  #gears {
-    height: 125px;
+  .header h1 {
+    font-size: 25px;
   }
 
-  .listpt{
+  .navbar ul {
+    flex-direction: column;
+    padding-top: 5px;
+  }
+
+  .navbar ul li {
+    margin-top: 0px;
+    text-align: right;
+    font-size: 80%;
+    border-style: solid;
+    border-color: #b5c99a;
+    padding: 5px;
+  }
+
+  #gears {
+    height: 100px;
+  }
+
+  .listpt {
     font-size: 100%;
   }
 
   .library {
+    display: flex;
     flex-wrap: wrap;
-    margin: 0;
+    margin-left: 10px;
   }
 
-  #first {
-    height: auto
-  }
-
-  #first img{
+  .img1 {
+    display: inline-block;
     width: 93%;
   }
 
+  .nonfirst {
+    display:flex;
+    width:auto;
+  }
+
+  .next a {
+    display: block;
+    width:auto;
+  }
+
   .next img {
-    width: 45%;
-    align-items: center;
+    width:50%;
+  }
+
+  .next p {
+    font-size: 80%
+
   }
 
   .contact {
     font-size: 60%;
+  }
+
+  .footer {
+    padding: 25px;
+  }
+}
+
+@media screen and (max-width:810px) {
+
+  body {
+    width: 100%;
+  }
+  
+  .header {
+    width: 100%
   }
 }
