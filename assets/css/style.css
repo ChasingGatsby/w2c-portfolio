@@ -91,19 +91,19 @@ A:active {
   margin-left: 50px;
   margin-top: 30px;
   display: flex;
-  /* flex-flow: row wrap; */
 }
 
 .library img {
   border: solid;
   border-color: rgb(92, 8, 8);
-  flex-grow: 0;
   margin: 5px;
 }
 
 .next {
   display: flex;
   flex-flow: row wrap;
+  align-items: flex-start;
+  align-content: space-between;
 }
 
 .contactinfo li {
@@ -170,23 +170,20 @@ A:active {
   .library {
     display: flex;
     flex-wrap: wrap;
-    margin: 0;
+    margin: auto;
   }
 
   .first {
-    width: 96%;
-    height: 50%; 
+    display: inline-block;
+    width: 95%;
   }
 
-  /* .first img{
-    width: 93%;
-    height: auto;
-  } */
 
-  .next img {
-    width: 45%;
-    align-items: center;
+  .next a {
+    display: inline-block;
+    width:48%
   }
+
 
   .contact {
     font-size: 60%;
