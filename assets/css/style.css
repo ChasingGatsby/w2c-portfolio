@@ -89,9 +89,8 @@ A:active {
 .library {
   margin-left: 50px;
   margin-top: 30px;
-  height: 510px;
   display: flex;
-
+  /* flex-flow: row wrap; */
 }
 
 .library img {
@@ -104,13 +103,11 @@ A:active {
 
 #first {
   align-self: left;
-  height:500px;
 }
 
 .next {
   display:flex;
-  flex-flow: column wrap;
-  justify-content: space-between;
+  flex-flow: row wrap;
 }
 
 .contactinfo li {
@@ -138,4 +135,40 @@ A:active {
   right: 25px;
   font-weight: bold;
   font-style: oblique;
+}
+
+@media screen and (max-width: 360px) {
+  body {
+    width: 100%;
+  }
+
+  #gears {
+    height: 125px;
+  }
+
+  .listpt{
+    font-size: 100%;
+  }
+
+  .library {
+    flex-wrap: wrap;
+    margin: 0;
+  }
+
+  #first {
+    height: auto
+  }
+
+  #first img{
+    width: 93%;
+  }
+
+  .next img {
+    width: 45%;
+    align-items: center;
+  }
+
+  .contact {
+    font-size: 60%;
+  }
 }
