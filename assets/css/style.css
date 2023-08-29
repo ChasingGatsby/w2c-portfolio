@@ -2,6 +2,9 @@ body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   background-color: rgb(142, 183, 219);
 }
+:root {
+  --maincolor: rgb(92, 8, 8);
+}
 
 #gears {
   width: 100%;
@@ -73,7 +76,7 @@ A:active {
   width: max-content;
   border-style: solid inset inset solid;
   border-width: 5px;
-  border-color: teal;
+  border-color: var(--maincolor);
   box-shadow: 10px 5px 5px gray;
 }
 
@@ -93,8 +96,10 @@ A:active {
 
 .library img {
   border: solid;
+  border-color: rgb(92, 8, 8);
   flex-grow: 0;
   margin: 5px;
+
 }
 
 #first {
@@ -123,6 +128,8 @@ A:active {
   background-color: rgb(92, 8, 8);
   color:white;
   font-size: 30px;
+  font-style: oblique;
+  text-decoration: underline;
 }
 
 #greeting {
