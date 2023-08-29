@@ -93,17 +93,44 @@ A:active {
   display: flex;
 }
 
+.first {
+  position: relative;
+}
+
+.proj1 {
+  position: absolute;
+  top: 8px;
+  left:-52px;
+  background-color: var(--maincolor);
+  color:white;
+  padding:10px
+}
+
 .library img {
   border: solid;
   border-color: rgb(92, 8, 8);
   margin: 5px;
 }
 
-.next {
+.nonfirst {
   display: flex;
   flex-flow: row wrap;
   align-items: flex-start;
   align-content: space-between;
+}
+
+.next {
+  display: flex;
+  position: relative;
+}
+
+.soon {
+  position: absolute;
+  top: 8px;
+  left: -52px;
+  color:white;
+  background-color: var(--maincolor);
+  padding:10px
 }
 
 .contactinfo li {
@@ -160,7 +187,7 @@ A:active {
   }
 
   #gears {
-    height: 125px;
+    height: 100px;
   }
 
   .listpt {
@@ -170,18 +197,12 @@ A:active {
   .library {
     display: flex;
     flex-wrap: wrap;
-    margin: auto;
+    margin-left: 10px;
   }
 
-  .first {
+  .img1 {
     display: inline-block;
-    width: 95%;
-  }
-
-
-  .next a {
-    display: inline-block;
-    width:48%
+    width: 80%;
   }
 
 
