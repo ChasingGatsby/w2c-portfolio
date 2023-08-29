@@ -1,6 +1,6 @@
 body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  background-color: rgb(142, 183, 219);
+  background-color: #B5C99A;
 }
 :root {
   --maincolor: rgb(92, 8, 8);
@@ -17,7 +17,7 @@ body {
   justify-content: space-between;
   color: white;
   background-color: rgb(92, 8, 8);
-  height: 110px;
+  /* height: 110px; */
 }
 
 .header h1::after {
@@ -72,7 +72,7 @@ A:active {
   font-size: 40px;
   margin: 20px;
   padding: 20px;
-  background-color: whitesmoke;
+  background-color: #FFF9C9;
   width: max-content;
   border-style: solid inset inset solid;
   border-width: 5px;
@@ -111,12 +111,15 @@ A:active {
 }
 
 .contactinfo li {
-  /* background-color: aqua; */
   margin: 25px 45px;
   font-size: 200%;
   font-weight: bold;
   width: 30%;
   list-style: circle;
+}
+
+#ghlink:visited {
+  color: purple
 }
 
 .footer {
@@ -140,6 +143,23 @@ A:active {
 @media screen and (max-width: 360px) {
   body {
     width: 100%;
+  }
+
+  .header {
+    /* flex-direction: column; */
+  }
+
+
+  .navbar ul {
+    flex-direction: column;
+    /* align-items: center; */
+  }
+
+  .navbar ul li {
+    margin-top: 0px;
+    text-align: right;
+    font-size:90%
+
   }
 
   #gears {
