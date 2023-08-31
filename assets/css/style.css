@@ -1,7 +1,6 @@
 body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   background-color: #b5c99a;
-  min-height: 100vh;
 }
 :root {
   --maincolor: rgb(92, 8, 8);
@@ -67,6 +66,7 @@ A:active {
   border-color: #b5c99a;
   background-color: var(--cardcolor);
   padding: 5px;
+  width:max-content;
 }
 
 .card {
@@ -172,15 +172,58 @@ A:active {
   font-style: oblique;
 }
 
+
+@media screen and (max-width:768px) {
+
+  body {
+    max-width:100%;
+  }
+
+  .header {
+    height: 130px;
+  } 
+
+  h1 {
+    position: relative;
+    left: 10px;
+  } 
+
+  #gears {
+    height: 200px;
+  } 
+
+  .navbar {
+    position: relative;
+    right: 50px;
+  } 
+
+  .aboutme {
+    width: 90%;
+  }
+
+  .library {
+    flex-direction: column;
+
+  }
+
+  .contactinfo li {
+    width:max-content;
+  }
+ }
+
 @media screen and (max-width: 360px) {
   body {
     width: 100%;
   }
 
+
   .header h1 {
     font-size: 25px;
   }
 
+  .navbar {
+    position: static;
+  }
   .navbar ul {
     flex-direction: column;
     padding-top: 5px;
@@ -189,7 +232,7 @@ A:active {
   .navbar ul li {
     margin-top: 0px;
     text-align: right;
-    font-size: 80%;
+    font-size: 65%;
   }
 
   #gears {
@@ -214,7 +257,7 @@ A:active {
     display: flex;
     flex-wrap: wrap;
     margin-left: 10px;
-    width: 100%;
+    /* width: 90%; */
   }
 
   .img1 {
@@ -243,39 +286,4 @@ A:active {
   .footer {
     padding: 25px;
   }
-}
-
-@media screen and (max-width:768px) {
-
-  body {
-    max-width:100%;
-    margin-left:5px;
-  }
-
-  .header {
-    height: 130px;
-  }
-
-  h1 {
-    position: relative;
-    left: 10px;
-  }
-
-  #gears {
-    height: 200px;
-  }
-
-  .navbar {
-    position: relative;
-    right: 50px;
-  }
-
-  .aboutme {
-    width: 90%;
-  }
-
-  .library {
-    flex-direction: column;
-  }
-
 }
