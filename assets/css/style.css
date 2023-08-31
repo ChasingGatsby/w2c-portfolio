@@ -1,6 +1,7 @@
 body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   background-color: #b5c99a;
+  max-width:100%
 }
 :root {
   --maincolor: rgb(92, 8, 8);
@@ -67,6 +68,22 @@ A:active {
   background-color: var(--cardcolor);
   padding: 5px;
   width:max-content;
+}
+
+.avabar {
+  position:relative;
+  width:100%;
+}
+
+#me {
+  position: absolute;
+  left: 25px;
+  top:25px;
+  height: 200px;
+  border-style:solid;
+  border-radius: 500px;
+  border-color: var(--cardcolor);
+  border-width:5px
 }
 
 .card {
