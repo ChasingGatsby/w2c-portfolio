@@ -28,7 +28,7 @@ body {
 }
 
 a:link {
-  color: #73a82d;
+  color: var(--maincolor);
 }
 
 a:visited {
