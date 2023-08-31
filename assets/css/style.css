@@ -100,6 +100,7 @@ A:active {
 
 .first {
   position: relative;
+
 }
 
 .proj1 {
@@ -146,7 +147,7 @@ A:active {
   margin: 25px 45px;
   font-size: 200%;
   font-weight: bold;
-  width: 30%;
+  width: 100%;
   list-style: circle;
 }
 
@@ -224,16 +225,11 @@ A:active {
 
   .nonfirst {
     display:flex;
-    width:auto;
+    width:48%;
   }
 
-  .next a {
-    display: block;
-    width:auto;
-  }
-
-  .next img {
-    width:50%;
+  .next img{
+    width:100%;
   }
 
   .next p {
@@ -250,13 +246,22 @@ A:active {
   }
 }
 
-@media screen and (max-width:810px) {
+@media screen and (max-width:768px) {
 
   body {
+    max-width:100%;
+  }
+
+  .header {
+    width:100%;
+  }
+
+  .aboutme {
     width: 100%;
   }
-  
-  .header {
-    width: 100%
+
+  .library {
+    flex-direction:column;
   }
+
 }
