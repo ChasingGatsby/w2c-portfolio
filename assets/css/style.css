@@ -347,9 +347,14 @@ A:active {
     margin-left: 10px;
   }
 
-  .img1 {
-    display: inline-block;
-    width: 93%;
+  .first {
+    display:block;
+    max-width: 400px;
+    max-height:500px;
+  }
+
+  .img1{
+    max-width: 100%
   }
 
   .nonfirst {
