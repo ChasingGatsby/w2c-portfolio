@@ -228,6 +228,70 @@ A:active {
   }
 }
 
+@media screen and (max-width: 412px) {
+  body {
+    width: 100%;
+  }
+
+  .header h1 {
+    font-size: 25px;
+  }
+
+  .navbar {
+    position: static;
+  }
+  .navbar ul {
+    flex-direction: column;
+    padding-top: 5px;
+  }
+
+  .navbar ul li {
+    margin-top: 0px;
+    text-align: right;
+    font-size: 65%;
+  }
+
+  #greeting {
+    margin-left: 40px;
+    font-size: 20px;
+  }
+
+  .aboutme p {
+    font-size: 20px;
+    margin: 0px 10px;
+    width: 100%
+  }
+
+  .library {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 10px;
+  }
+
+  .img1 {
+    display: inline-block;
+    width: 85%;
+    max-width: 100%;
+  }
+
+  .nonfirst {
+    display: flex;
+    width: 48%;
+  }
+
+  .next img {
+    width: 100%;
+  }
+
+  .next p {
+    font-size: 80%;
+  }
+
+  .contact {
+    font-size: 60%;
+  }
+}
+
 @media screen and (max-width: 360px) {
   body {
     width: 100%;
