@@ -273,6 +273,7 @@ A:active {
   .aboutme p {
     font-size: 20px;
     margin: 0px 10px;
+    width: 100%
   }
 
   .library {
