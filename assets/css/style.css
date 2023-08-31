@@ -261,6 +261,10 @@ A:active {
     left: 10px;
   }
 
+  #gears {
+    height: 200px;
+  }
+
   .navbar {
     position: relative;
     right: 50px;
