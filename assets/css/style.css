@@ -258,7 +258,8 @@ A:active {
   #me {
     border-width: 3px;
     top: -50px;
-    left: 65px;
+    left: 55px;
+    height:120px;
   }
 
   .listpt {
