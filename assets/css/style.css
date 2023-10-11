@@ -116,6 +116,12 @@ A:active {
 
 .first {
   position: relative;
+  width:50%;
+  height: 50%;
+}
+
+.img1 {
+  width:100%;
 }
 
 .proj1 {
